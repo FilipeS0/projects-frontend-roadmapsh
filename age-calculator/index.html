@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Age calculator</title>
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <section class="container">
+            <form action="post">
+                <h1>Age Calculator</h1>
+
+                <label for="dd"> Enter your birth date: </label>
+                <div class="date-inputs">
+                    <input
+                        type="number"
+                        name="dd"
+                        id="dd"
+                        max="31"
+                        min="1"
+                        placeholder="dd"
+                    />
+                    <span> </span>
+                    <input
+                        type="number"
+                        name="mm"
+                        id="mm"
+                        max="12"
+                        min="1"
+                        placeholder="mm"
+                    />
+                    <span> </span>
+                    <input
+                        type="number"
+                        name="yyyy"
+                        id="yyyy"
+                        max="2026"
+                        min="1900"
+                        placeholder="yyyy"
+                    />
+
+                    <span class="calendar"></span>
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+            <p class="result"></p>
+        </section>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
