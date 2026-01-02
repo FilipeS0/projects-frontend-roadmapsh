@@ -96,3 +96,8 @@ button[type="submit"]:hover {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.result {
+    font-size: 1.25rem;
+    text-align: center;
+}
