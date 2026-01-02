@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flash Cards</title>
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <section class="container">
+            <h1>Flash Cards</h1>
+
+            <div class="loading-container">
+                <div class="loading-bar-container">
+                    <div class="loading-bar"></div>
+                    <span class="percent"></span>
+                </div>
+
+                <span class="flash-size"></span>
+            </div>
+
+            <div class="flash-container">
+                <div class="flash-card">
+                    <p class="question">
+                        What is the difference between var, let and const?
+                    </p>
+                    <p class="answer desactive">
+                        var is function-scoped and hoisted. let and const are
+                        block-scoped. let can be updated, while const cannot be
+                        re-declared or updated.
+                    </p>
+                </div>
+                <div class="flash-card desactive">
+                    <p class="question">
+                        What's the difference between `==` and `===`
+                    </p>
+                    <p class="answer">
+                        `==` (loose equality) compares values after type
+                        coercion, while `===` (stricty equality) compares values
+                        and types without coercion
+                    </p>
+                </div>
+                <div class="flash-card desactive">
+                    <p class="question">What is Hoisting?</p>
+                    <p class="answer">
+                        The JavaScript engine moves declarations (but not
+                        initializations) to the top of their scope during
+                        compilation.
+                    </p>
+                </div>
+                <div class="flash-card desactive">
+                    <p class="question">What is closure?</p>
+                    <p class="answer">
+                        A function that retains access to variables from its
+                        outer scope even after the outer function has executed.
+                    </p>
+                </div>
+                <div class="flash-card desactive">
+                    <p class="question">What is Promise?</p>
+                    <p class="answer">
+                        An object representing an asynchronous operation's
+                        eventual result, which can be Pending, Fulfilled, or
+                        Rejected.
+                    </p>
+                </div>
+
+                <nav class="button-container">
+                    <button id="prev">&lt; Previous</button>
+                    <button id="ans">Show Answer</button>
+                    <button id="next">Next &gt;</button>
+                </nav>
+            </div>
+        </section>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
