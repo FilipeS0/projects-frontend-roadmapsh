@@ -39,7 +39,12 @@ window.addEventListener("click", (e) => {
     const options = document.querySelector(".options");
 
     if (!defaultState.contains(e.target) && !options.contains(e.target)) {
-        toggleOptions();
-        defaultState.classList.toggle("droped");
+        options.classList.add("hidden");
+    }
+    if (
+        defaultState.classList.contains("droped") &&
+        !defaultState.contains(e.target)
+    ) {
+        defaultState.classList.remove("droped");
     }
 });
